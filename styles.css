@@ -32,10 +32,30 @@ body {
     and use it in your business card.
      */
 }
-
-.border-blue {
-    border: 1px dotted blue;
+.card {
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.45);
 }
+.card:hover {
+  background-color: #d0bcd5;
+  color: #fcff6c;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.card {
+  animation: slide-in 1s ease-in-out;
+}
+
+
+/* .border-blue {
+    border: 1px dotted blue;
+} */
 
 /*
 Stretch goals:
